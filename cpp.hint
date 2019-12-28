@@ -1,0 +1,2 @@
+#define WINKTAB_API __declspec(dllexport)
+#define WINKTAB_API __declspec(dllimport)
