@@ -7,6 +7,7 @@ My motivation for this project has been to get ZBrush working over remote deskto
 ## Requirements
 
 - Windows 8 or higher, 64-bit
+- Visual C++ Redistributable for Visual Studio 2015
 - ZBrush 2020 (likely works with earlier versions, but untested - same with ZBrushCore)
 
 ## Installation
