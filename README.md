@@ -2,7 +2,10 @@
 
 Adds Windows Ink / Tablet PC support to ZBrush 2020, via Wacom's WinTab API. It has been tested on a Surface Pro 7.
 
-My motivation for this project has been to get ZBrush working over remote desktop (currently untested) with pen pressure support.
+Adds pressure support via:
+- Regular usage (without official Wacom driver installed)
+- Remote Desktop (requires a recent version of Windows 10)
+- EasyCanvas (iPad Pro, tested by third party)
 
 ## Requirements
 
