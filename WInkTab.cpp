@@ -18,7 +18,7 @@ void ProcessPenInput(HWND hWnd, POINTER_PEN_INFO& penInfo)
 	PacketData* packetData = &packetQueue[packetQueueIndex & PACKET_QUEUE_MASK].data;
 	packetData->pkX = (int)((float)penInfo.pointerInfo.ptPixelLocation.x * screenRatioX) + wintabPref.lcOutOrgX;
 	packetData->pkY = wintabPref.lcOutExtY - (int)((float)penInfo.pointerInfo.ptPixelLocation.y * screenRatioY);
-	packetData->pkNormalPressure = (penInfo.penMask & PEN_MASK_PRESSURE) ? (penInfo.pressure << 5) : 0;
+	packetData->pkNormalPressure = (penInfo.penMask & PEN_MASK_PRESSURE) ? min(penInfo.pressure << 5, 32767) : 0;
 	packetData->pkCursor = 1; // No eraser support yet
 
 	if (penInfo.pointerInfo.ButtonChangeType && POINTER_CHANGE_FIRSTBUTTON_DOWN)
