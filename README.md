@@ -7,6 +7,8 @@ Adds pressure support via:
 - Remote Desktop (requires a recent version of Windows 10)
 - EasyCanvas (iPad Pro, tested by third party)
 
+**Important**: ZBrush will self-calibrate the pen pressure on the first strokes. When you first draw after opening the program, start with a heavy stroke - you may undo it afterwards. This will let ZBrush know what the maximum pressure is, otherwise initial light strokes will be treated differently. Needs to be repeated every time ZBrush is restarted.
+
 ## Requirements
 
 - Windows 8 or higher, 64-bit
